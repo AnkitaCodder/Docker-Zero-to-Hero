@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY devops /app/
 
 # Run database migrations (optional — better to do at runtime)
-# RUN python manage.py migrate
+RUN python manage.py migrate
 
 # Expose Django port
 EXPOSE 8000
